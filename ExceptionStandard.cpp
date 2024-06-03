@@ -4,3 +4,20 @@
 #include <array>
 //untuk obyek array yang akan kita gunakan
 using namespace std;
+
+int main()
+{
+    cout << "Awal Program" << endl; //penanda
+    try {
+        array<int, 3> data = { 8, 4, 2};
+        //pesan array integer 3 elemen
+        cout<<data.at(5)<<endl;
+    }
+    catch (exception& e) {
+        //penangkap menggunakan obyek exception
+        cout << e.what() << endl;
+        /*akan dieksekusi karna array data hanya memiliki 3 elemen*/
+    }
+    cout << "Baris Program Yang terakhir" << endl;
+    
+}
